@@ -26,7 +26,7 @@
             <form action="#">
               <div class="search-box">
                 <input type="search" placeholder="Search Documentation" />
-                <button><img src="assets/command.svg" alt="" />k</button>
+                <button><img src="assets/command.svg" alt="" />K</button>
               </div>
             </form>
             <div class="feedback"><a href="#">Feedback</a></div>
@@ -39,35 +39,49 @@
       <div class="main-content-area">
         <div class="left-navigation">
           <ul>
-            <li><a href="#">Getting Started</a></li>
-            <li><a href="#">Installation</a></li>
-            <li><a href="#">Project Structure</a></li>
-            <li><a href="#">Building Your Application</a></li>
-            <li><a href="#">Routing</a></li>
-            <li><a href="#">Data Fetching</a></li>
+            <li>
+              <h4>Getting Started</h4>
+            </li>
+            <li><a href="#whatIsNextJs">What is Next.js</a></li>
+            <li><a href="#mainFeatures">Main Features</a></li>
+            <li>
+              <h4>Building Your Application</h4>
+            </li>
+            <li><a href="#howToUseTheseDocs">How to use these docs</a></li>
+            <li>
+              <a href="#appRouterVsPageRouter">App router vs page router</a>
+            </li>
             <li><a href="#">Rendering</a></li>
             <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
-            <li><a href="#">Caching</a></li>
+            <li><a href="#">Styling</a></li>
+            <li><a href="#">Optimizing</a></li>
+            <li><a href="#">Configuring</a></li>
+            <li><a href="#">Testing</a></li>
+            <li><a href="#">Authentication</a></li>
+            <li><a href="#">Deploying</a></li>
+            <li><a href="#">Upgrading</a></li>
+            <li>
+              <a href="#"><h4>API Reference</h4></a>
+            </li>
+            <li><a href="#">Components</a></li>
+            <li><a href="#">File Conventions</a></li>
+            <li><a href="#">Functions</a></li>
+            <li><a href="#">next.config.js Options</a></li>
+            <li><a href="#">create-next-app</a></li>
+            <li><a href="#">Edge Runtime</a></li>
+            <li><a href="#">Next.js CLI</a></li>
+            <li>
+              <a href="#"><h4>Architecture</h4></a>
+            </li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Fast Refresh</a></li>
+            <li><a href="#">Next.js Compiler</a></li>
+            <li><a href="#">Supported Browsers</a></li>
+            <li><a href="#">Turbopack</a></li>
+            <li>
+              <a href="#"><h4>Community</h4></a>
+            </li>
+            <li><a href="#">Contribution Guide </a></li>
           </ul>
         </div>
         <div class="main-content">
@@ -76,7 +90,7 @@
             <p>Welcome to the Next.js documentation!</p>
           </div>
           <hr />
-          <div class="data-heading">
+          <div class="data-heading section-block" id="whatIsNextJs">
             <h2>What is Next.js?</h2>
             <p>
               React framework for building full-stack web >Next.js is a React
@@ -101,7 +115,7 @@
               full-stack web >Next.js is a Reac
             </p>
           </div>
-          <div class="data-meddle">
+          <div class="data-meddle section-block" id="mainFeatures">
             <div class="meddle-head">
               <h2>Main Features</h2>
               <p>Some of the Next.js features include:</p>
@@ -140,8 +154,195 @@
             </div>
             <hr />
           </div>
+          <div class="section-block" id="howToUseTheseDocs">
+            <h2>How to Use These Docs</h2>
+            <p>
+              On the left side of the screen, you'll find the docs navbar. The
+              pages of the docs are organized sequentially, from basic to
+              advanced, so you can follow them step-by-step when building your
+              application. However, you can read them in any order or skip to
+              the pages that apply to your use case.br <br /><br />
+              the pages that apply to your use case.br On the right side of the
+              screen, you'll see a table of contents that makes it easier to
+              navigate between sections of a page. If you need to quickly find a
+              page, you can use the search bar at the top, or the search
+              shortcut (Ctrl+K or Cmd+K).
+              <br />
+              <br />
+              To get started, checkout the
+              <span> <a href="#">Installation</a> </span>guide.
+            </p>
+          </div>
+          <hr />
+          <div class="section-block" id="appRouterVsPageRouter">
+            <h2>App Router vs Pages Router</h2>
+            <p>
+              Next.js has two different routers: the App Router and the Pages
+              Router. The App Router is a newer router that allows you to use
+              React's latest features, such as Server Components and Streaming.
+              The Pages Router is the original Next.js router, which allowed you
+              to build server-rendered React applications and continues to be
+              supported for older Next.js applications.
+            </p>
+            <br />
+            <p>
+              At the top of the sidebar, you'll notice a dropdown menu that
+              allows you to switch between the App Router and the Pages Router
+              features. Since there are features that are unique to each
+              directory, it's important to keep track of which tab is selected.
+            </p>
+            <br />
+            <p>
+              The breadcrumbs at the top of the page will also indicate whether
+              you're viewing App Router docs or Pages Router docs.
+            </p>
+          </div>
+          <hr />
+          <div>
+            <h2>Pre-Requisite Knowledge</h2>
+            <p>
+              Although our docs are designed to be beginner-friendly, we need to
+              establish a baseline so that the docs can stay focused on Next.js
+              functionality. We'll make sure to provide links to relevant
+              documentation whenever we introduce a new concept.
+            </p>
+            <br />
+            <p>
+              To get the most out of our docs, it's recommended that you have a
+              basic understanding of HTML, CSS, and React. If you need to brush
+              up on your React skills, check out our
+              <a href="#">React Foundations Course</a>, which will introduce you
+              to the fundamentals. Then, learn more about Next.js by building a
+              <a href="#">dashboard application.</a>
+            </p>
+          </div>
+          <hr />
+          <div>
+            <h2>Accessibility</h2>
+            <p>
+              For optimal accessibility when using a screen reader while reading
+              the docs, we recommend using Firefox and NVDA, or Safari and
+              VoiceOver.
+            </p>
+          </div>
+          <hr />
+          <div>
+            <h2>Join our Community</h2>
+            <p>
+              If you have questions about anything related to Next.js, you're
+              always welcome to ask our community on GitHub
+              <a href="#">Discussions,</a> <a href="#">Discord, </a
+              ><a href="#">Twitter,</a> and Reddit.
+            </p>
+          </div>
+          <br />
+          <div class="apps-service-area">
+            <div class="apps-service">
+              <h3><a href="#">Getting Start</a></h3>
+              <p>
+                Learn how to create full-stack web applications with Next.js.
+              </p>
+            </div>
+            <div class="apps-service">
+              <h3><a href="#">App Router</a></h3>
+              <p>
+                Use the new App Router with Next.js' and React's latest
+                features, including Layouts, Server Components,
+              </p>
+            </div>
+            <div class="apps-service">
+              <h3><a href="#">Pages Router</a></h3>
+              <p>
+                Before Next.js 13, the Pages Router was the main way to create
+                routes in Next.js with an intuitive file-system
+              </p>
+            </div>
+            <div class="apps-service">
+              <h3><a href="#"> Architecture</a></h3>
+              <p>How Next.js Works</p>
+            </div>
+            <div class="apps-service">
+              <h3><a href="#">Community</a></h3>
+              <p>Get involved in the Next.js community.</p>
+            </div>
+          </div>
+          <hr />
+          <div class="next-link">
+            <div class="next-page">
+              <p>Next</p>
+              <div>
+                <p>Installation</p>
+                <img src="assets/chevron.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="facebook-area">
+            <div class="facebook-triger">
+              <p>Was this helpful?</p>
+              <img src="assets/frown.svg" alt="" />
+              <img src="assets/frown.svg" alt="" />
+              <img src="assets/frown.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <hr />
+    <footer>
+      <div class="footer-area">
+        <div class="vercel-logo">Vercel</div>
+        <div class="resources-section">
+          <ul>
+            <li>
+              <a href="#"><h4>Resources</h4></a>
+            </li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Showcase</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Next.js Conf</a></li>
+            <li><a href="#">DX Platform</a></li>
+          </ul>
+        </div>
+        <div class="more">
+          <ul>
+            <li>
+              <a href="#"><h4>More</h4></a>
+            </li>
+            <li><a href="#">Contact Sales</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Releases</a></li>
+            <li><a href="#">Telemetry</a></li>
+            <li><a href="#">Governance</a></li>
+          </ul>
+        </div>
+        <div class="governance">
+          <ul>
+            <li>
+              <a href="#"><h4>Governance</h4></a>
+            </li>
+            <li><a href="#">Next.js + Vercel</a></li>
+            <li><a href="#">Open Source Software</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">x</a></li>
+          </ul>
+        </div>
+        <div class="legal">
+          <ul>
+            <li><a href="#">Privacy Policy </a></li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <ul>
+            <li>
+              <a href="#"><h4>Subscribe to our newsletter</h4></a>
+            </li>
+            <li><a href="#">Stay updated on new releases and</a></li>
+            <li><a href="#">features, guides, and case studies.</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
